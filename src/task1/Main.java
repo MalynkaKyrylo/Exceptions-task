@@ -10,10 +10,8 @@ public class Main {
     private static int getData() {
         try {
             Scanner scanner = new Scanner(System.in);
-            int num = 0;
             System.out.println("Enter the number:");
-            num = Integer.parseInt(scanner.nextLine());
-            return num;
+            return Integer.parseInt(scanner.nextLine());
         } catch (NumberFormatException e) {
             System.out.println("Wrong value! Please enter the number:");
             return getData();
